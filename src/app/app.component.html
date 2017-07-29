@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav>
+  <ul>
+    <li><h1>Animations Usage</h1></li>
+    <li><a routerLink="one" routerLinkActive="active">Animate</a></li>
+    <li><a routerLink="two" routerLinkActive="active">AnimateChild</a></li>
+    <li><a routerLink="three" routerLinkActive="active">Query</a></li>
+    <li><a routerLink="four" routerLinkActive="active">Stagger</a></li>
+  </ul>
+</nav>
+<div class="container" [@routeAnimation]="prepRouteState(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
